@@ -125,5 +125,5 @@ Esta política poderá ser revisada para refletir mudanças de funcionalidades, 
 ## Referências normativas
 
 - [Lei nº 13.709/2018, LGPD, texto atualizado (Câmara dos Deputados)](https://www2.camara.leg.br/legin/fed/lei/2018/lei-13709-14-agosto-2018-787077-normaatualizada-pl.html)
-- [ANPD: direitos dos titulares](https://www.gov.br/anpd/pt-br/assuntos/titular-de-dados-1/direito-dos-titulares)
+- [ANPD: direitos dos titulares](https://www.gov.br/anpd/pt-br/assuntos/titular-de-dados/direito-dos-titulares)
 - [ANPD: guia orientativo de cookies e proteção de dados](https://www.gov.br/anpd/pt-br/centrais-de-conteudo/materiais-educativos-e-publicacoes/guia_orientativo_cookies_e_protecao_de_dados_pessoais)
