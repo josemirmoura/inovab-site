@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="InovaB, plataforma da INOVATEC/UEPB para explorar a produção acadêmica e identificar indícios de potencial inovador.">
+<title>InovaB | Inteligência sobre a produção acadêmica da UEPB</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{color-scheme:light;--bg:#fffdf9;--surface:#fff;--ink:#25323a;--muted:#5c6b70;--line:#e9e5de;--navy:#17324d;--teal:#168d93;--orange:#f07822;--shadow:0 18px 45px #102f4710}
+:root[data-theme=dark]{color-scheme:dark;--bg:#0c1721;--surface:#142532;--ink:#eef7fa;--muted:#b5c7d0;--line:#2d4756;--navy:#152f43;--teal:#3cb6bb;--orange:#ffad58;--shadow:0 15px 45px #0004}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:Manrope,sans-serif;line-height:1.55}a{color:inherit}button{font:inherit;cursor:pointer}.wrap{width:min(1160px,calc(100% - 40px));margin:auto}.skip{position:absolute;left:-9999px}.skip:focus{left:16px;top:12px;z-index:10;background:var(--surface);padding:10px}
+header{position:sticky;top:0;z-index:5;background:var(--surface);border-bottom:1px solid var(--line)}.nav{min-height:80px;display:flex;gap:24px;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:15px;text-decoration:none}.brand img{max-width:136px;max-height:52px;object-fit:contain}.brand strong{display:block;font:700 1.15rem Sora,sans-serif}.brand small{display:block;color:var(--muted);font-size:.74rem}.links{display:flex;gap:25px;align-items:center}.links a{text-decoration:none;font-size:.9rem;font-weight:700}.actions{display:flex;align-items:center;gap:10px}.theme{background:transparent;border:1px solid var(--line);color:var(--ink);border-radius:11px;padding:10px 13px}.btn{display:inline-flex;justify-content:center;align-items:center;gap:9px;background:var(--orange);color:#17242f;text-decoration:none;font-weight:800;border-radius:12px;padding:14px 21px;border:1px solid transparent}.btn.secondary{background:var(--surface);color:var(--ink);border-color:var(--line)}
+.hero{padding:94px 0 83px;background:radial-gradient(circle at 83% 19%,#f0782216,transparent 35%)}.hero-grid{display:grid;grid-template-columns:1.04fr .96fr;gap:72px;align-items:center}.eyebrow{font-size:.76rem;letter-spacing:.14em;text-transform:uppercase;color:var(--teal);font-weight:800}.hero h1{font:800 clamp(2.45rem,5.2vw,4.8rem)/1.11 Sora,sans-serif;letter-spacing:-.05em;margin:20px 0 23px}.hero h1 em{font-style:normal;color:var(--teal)}.lead{font-size:1.12rem;color:var(--muted);max-width:620px}.cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:31px}.note{font-size:.8rem;color:var(--muted);margin-top:18px}.visual{border-radius:22px;background:var(--navy);color:#ecf8fb;padding:28px;box-shadow:var(--shadow);transform:rotate(1deg)}.visual h2{font:700 1rem Sora,sans-serif;margin:0 0 21px}.visual .fake-search{background:#ffffff17;border:1px solid #ffffff2d;border-radius:10px;padding:14px;color:#d9e9ef;font-size:.85rem}.visual .result{background:#ffffff12;border:1px solid #ffffff26;border-radius:12px;padding:15px;margin-top:12px}.visual .result b{display:block;font-size:.9rem}.visual .result p{margin:7px 0;color:#cbdce4;font-size:.77rem}.tag{display:inline-block;border:1px solid #77b9bb99;border-radius:25px;padding:4px 9px;font-size:.69rem;margin:6px 5px 0 0}.stripe{height:5px;background:linear-gradient(90deg,var(--teal) 0 72%,var(--orange) 72%)}
+section.block{padding:76px 0}.section-title{font:700 clamp(1.7rem,3.4vw,2.5rem)/1.2 Sora,sans-serif;letter-spacing:-.03em;margin:10px 0 13px}.section-intro{color:var(--muted);max-width:700px;margin:0 0 32px}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:19px}.card{background:var(--surface);border:1px solid var(--line);border-radius:17px;padding:27px}.card .number{font:700 1rem Sora,sans-serif;color:var(--orange)}.card h3{font:700 1.14rem Sora,sans-serif;margin:18px 0 9px}.card p{margin:0;color:var(--muted);font-size:.93rem}.soft{background:var(--surface);border-block:1px solid var(--line)}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:30px}.steps b{color:var(--teal);font-size:.85rem}.steps h3{font:700 1.05rem Sora,sans-serif}.steps p{color:var(--muted)}.final{background:var(--surface);color:var(--ink);padding:56px 0;border-top:3px solid var(--orange)}.final p{color:var(--muted)}.final .btn{background:var(--orange)}
+footer{background:var(--surface);border-top:1px solid var(--line);padding:24px 0;font-size:.79rem;color:var(--muted)}.foot{display:flex;gap:20px;justify-content:space-between;flex-wrap:wrap}.foot a{color:var(--teal)}
+@media(max-width:840px){.hero-grid{grid-template-columns:1fr;gap:35px}.hero{padding:60px 0}.links{display:none}.cards,.steps{grid-template-columns:1fr}.visual{transform:none}.nav{min-height:72px}.brand img{max-width:105px}}
+@media(max-width:460px){.wrap{width:min(100% - 28px,1160px)}.brand small{display:none}.brand img{max-width:85px}.hero h1{font-size:2.35rem}.actions .btn{padding:11px;font-size:.76rem}.theme{padding:9px}.visual{padding:17px}}
+
+/* Hero sem ilustração fictícia, com busca real. */
+.logo-dark{display:none}:root[data-theme=dark] .logo-light{display:none}:root[data-theme=dark] .logo-dark{display:block}
+.hero-grid{display:block;max-width:920px;text-align:center}.hero-copy{max-width:900px;margin:auto}.lead{max-width:760px;margin:0 auto}.cta{justify-content:center}.hero-search{display:flex;gap:10px;max-width:690px;margin:32px auto 0}.hero-search input{flex:1;min-width:0;border:1px solid var(--line);border-radius:12px;padding:15px;background:var(--surface);color:var(--ink);font:inherit}.hero-search button{border:0;border-radius:12px;background:var(--orange);color:#17242f;font:800 1rem Manrope,sans-serif;padding:14px 24px;cursor:pointer}.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}.foot small{flex-basis:100%;line-height:1.5}
+@media(max-width:600px){.hero-search{flex-direction:column}.hero-search button{width:100%}}
+
+/* Entradas suaves durante o scroll; conteúdo permanece visível sem JS. */
+@media (prefers-reduced-motion: no-preference){
+  .scroll-reveal{transition:opacity .62s ease,transform .62s cubic-bezier(.2,.7,.2,1);}
+  .js-reveal .scroll-reveal:not(.is-visible){opacity:0;transform:translateY(24px)}
+  .scroll-reveal.is-visible{opacity:1;transform:translateY(0)}
+  .cards .scroll-reveal:nth-child(2),.steps .scroll-reveal:nth-child(2){transition-delay:.08s}
+  .cards .scroll-reveal:nth-child(3),.steps .scroll-reveal:nth-child(3){transition-delay:.16s}
+}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto!important}.scroll-reveal{transition:none!important;transform:none!important;opacity:1!important}}
+</style>
+<script>(function(){try{document.documentElement.dataset.theme=localStorage.getItem('inovab-theme')||'light'}catch(_){document.documentElement.dataset.theme='light'}})()</script>
+</head>
+<body>
+<a class="skip" href="#conteudo">Ir para o conteúdo</a>
+<header><nav class="wrap nav" aria-label="Navegação principal">
+<a class="brand" href="/" aria-label="InovaB, início"><img class="logo-light" src="https://inovab.hubbr.org/assets/logo-inovatec.png" alt="INOVATEC / UEPB"><img class="logo-dark" src="https://inovab.hubbr.org/assets/logo-inovatec-pb.png" alt="" aria-hidden="true"><span><strong>InovaB</strong><small>Inteligência sobre pesquisa acadêmica</small></span></a>
+<div class="links"><a href="#sobre">Sobre</a><a href="#como-funciona">Como funciona</a><a href="https://inovab.hubbr.org/estudos/bioinsumos-agricolas">Estudos temáticos</a></div>
+<div class="actions"><button class="theme" id="themeToggle" type="button" aria-label="Alternar tema">◐</button><a class="btn" href="https://inovab.hubbr.org/pesquisa">Explorar pesquisas ↗</a></div>
+</nav></header><div class="stripe"></div>
+<main id="conteudo"><section class="hero"><div class="wrap hero-grid"><div class="hero-copy"><span class="eyebrow">INOVATEC · UNIVERSIDADE ESTADUAL DA PARAÍBA</span><h1>Conhecimento que pode gerar <em>inovação.</em></h1>
+<p class="lead">Explore trabalhos acadêmicos da UEPB, encontre temas promissores e identifique evidências que merecem uma avaliação especializada de potencial inovador.</p>
+<form class="hero-search" action="https://inovab.hubbr.org/pesquisa" method="get" role="search"><label class="sr-only" for="heroQuery">Buscar trabalhos acadêmicos</label><input id="heroQuery" name="q" maxlength="200" placeholder="Pesquise um tema, tecnologia ou palavra-chave"><button type="submit">Pesquisar ↗</button></form><div class="cta"><a class="btn" href="https://inovab.hubbr.org/pesquisa">Acessar plataforma de pesquisa ↗</a><a class="btn secondary" href="#sobre">Conhecer o InovaB</a></div></div>
+</div></section>
+<section id="sobre" class="block"><div class="wrap"><span class="eyebrow">POR QUE O INOVAB EXISTE</span><h2 class="section-title">Do acervo acadêmico à descoberta de oportunidades</h2><p class="section-intro">A produção científica da universidade contém conhecimento valioso distribuído em milhares de trabalhos. O InovaB oferece um ponto de acesso organizado para explorá-lo.</p>
+<div class="cards"><article class="card"><span class="number">01 / DESAFIO</span><h3>Conhecimento disperso</h3><p>Resultados acadêmicos podem passar despercebidos por quem trabalha com inovação e transferência de tecnologia.</p></article><article class="card"><span class="number">02 / SOLUÇÃO</span><h3>Mineração e classificação</h3><p>A ferramenta organiza metadados públicos e gera indicadores automatizados para apoiar buscas e triagem.</p></article><article class="card"><span class="number">03 / PROPÓSITO</span><h3>Aproximar pesquisa e aplicação</h3><p>Oferecer pistas úteis para análises posteriores conduzidas por profissionais da INOVATEC.</p></article></div></div></section>
+<section class="block soft" id="como-funciona"><div class="wrap"><span class="eyebrow">COMO FUNCIONA</span><h2 class="section-title">Três passos para começar</h2><div class="steps"><div><b>01 · ENCONTRE</b><h3>Pesquise no acervo</h3><p>Utilize termos, área, ano, orientador ou tipo de trabalho.</p></div><div><b>02 · EXPLORE</b><h3>Refine e compare</h3><p>Use os marcadores e as justificativas de classificação como indicadores preliminares.</p></div><div><b>03 · APROFUNDE</b><h3>Consulte a fonte</h3><p>Abra o registro acadêmico oficial e avalie a relevância do trabalho.</p></div></div></div></section>
+<section class="final"><div class="wrap"><span class="eyebrow" style="color:#9bd8dc">PESQUISA ABERTA</span><h2 class="section-title">Encontre o próximo ponto de partida.</h2><p>Explore a produção acadêmica da UEPB na plataforma de pesquisa InovaB.</p><a class="btn" href="https://inovab.hubbr.org/pesquisa">Começar pesquisa ↗</a></div></section></main>
+<footer><div class="wrap foot"><small>Classificação automatizada para apoio à triagem humana. Não representa parecer de patenteabilidade ou viabilidade comercial.</small><span>INOVATEC / UEPB · Desenvolvido por Prof. Dr. Josemir Moura Maia.</span><span><a href="https://inovab.hubbr.org/pesquisa">Pesquisa</a> · <a href="https://github.com/josemirmoura/inovab-site" rel="noopener noreferrer" target="_blank">GitHub do projeto</a></span></div></footer>
+<script>document.getElementById('themeToggle').addEventListener('click',()=>{const next=document.documentElement.dataset.theme==='dark'?'light':'dark';document.documentElement.dataset.theme=next;try{localStorage.setItem('inovab-theme',next)}catch(_){}})</script>
+
+<script>
+(()=>{
+ const items=[...document.querySelectorAll('.hero-copy,section.block .eyebrow,section.block .section-title,section.block .section-intro,.cards .card,.steps>div,.final .wrap')];
+ if(!items.length||!('IntersectionObserver' in window)||window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+ items.forEach(el=>el.classList.add('scroll-reveal'));
+ const observer=new IntersectionObserver(entries=>{for(const entry of entries){if(entry.isIntersecting){entry.target.classList.add('is-visible');observer.unobserve(entry.target)}}},{threshold:.08,rootMargin:'0px 0px -25px 0px'});
+ items.forEach(el=>{if(el.getBoundingClientRect().top<window.innerHeight*.85)el.classList.add('is-visible');else observer.observe(el)});
+ document.documentElement.classList.add('js-reveal');
+})()
+</script>
+</body></html>
